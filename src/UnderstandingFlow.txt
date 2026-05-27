@@ -1,0 +1,28 @@
+User Click
+   ↓
+UserForm.jsx
+   ↓
+UsersPage.jsx (handleSubmit)
+   ↓
+userService.js (createUser API call)
+   ↓
+Flask Route (/users POST)
+   ↓
+CRUD Layer (create_user)
+   ↓
+Model (User)
+   ↓
+PostgreSQL
+   ↓
+Response back same path
+
+
+useState → form handling
+
+useEffect → API calls and initially when the component opened then the auto executed. like as ngOnInit in Angular
+
+useRef → form focus / modals
+
+useContext → auth / role management
+
+useMemo → table performance optimization

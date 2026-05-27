@@ -1,0 +1,100 @@
+/* Page container */
+.users-container {
+  width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.users-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.user-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.user-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-form button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background-color: #0056b3;
+}
+
+/* User list */
+.user-list {
+  border-top: 1px solid #ddd;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-actions button {
+  margin-left: 8px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Edit button */
+.edit-btn {
+  background-color: orange;
+  color: white;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: red;
+  color: white;
+}
+.layout {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.users-page{
+  min-height:100vh;
+  display:flex;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.users-container {
+  flex: 1;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.users-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1e293b;
+}

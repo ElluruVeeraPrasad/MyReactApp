@@ -1,0 +1,67 @@
+/* Center the login container */
+/* .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f8;
+} */
+
+/* Login box */
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Login button */
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Users page button */
+.users-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+}
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../../assets/Homepage.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.switch-link{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
