@@ -54,7 +54,7 @@ function Login() {
 
       <div className="login-box">
 
-        <h2>{isRegister ? "Register" : "Login to our world"}</h2>
+        <h2>{isRegister ? "Register" : "Login to our application"}</h2>
 
         <form onSubmit={handleSubmit}>
 
