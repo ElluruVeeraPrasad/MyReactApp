@@ -20,18 +20,44 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-
           script: |
+            echo "===== DEPLOYMENT STARTED ====="
+
+            whoami
+            pwd
+
+            echo "===== NODE VERSION ====="
+            node -v
+            npm -v
+
+            echo "===== GOING TO PROJECT ====="
             cd ~/MyReactApp
 
+            echo "===== CURRENT DIRECTORY ====="
+            pwd
+
+            echo "===== PULLING LATEST CODE ====="
             git pull origin main
 
+            echo "===== INSTALLING PACKAGES ====="
             npm install
 
+            echo "===== BUILDING APPLICATION ====="
             npm run build
 
+            echo "===== VERIFYING DIST FOLDER ====="
+            ls -la dist
+
+            echo "===== CLEANING NGINX ROOT ====="
             sudo rm -rf /usr/share/nginx/html/*
 
+            echo "===== COPYING BUILD FILES ====="
             sudo cp -r dist/* /usr/share/nginx/html/
 
+            echo "===== RESTARTING NGINX ====="
             sudo systemctl restart nginx
+
+            echo "===== NGINX STATUS ====="
+            sudo systemctl status nginx --no-pager
+
+            echo "===== DEPLOYMENT COMPLETED ====="
